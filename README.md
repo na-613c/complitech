@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Complitech 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### [https://complitech.org](https://complitech.org)
 
-In the project directory, you can run:
+## План помещения
 
-### `yarn start`
+Необходимо создать приложение, содержащее зону отображение плана помещения в правой части экрана [(план предоставляется во вложении в формате .geojson)](./src/data/floor.json) c возможностью его зуммирования. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Координата левой нижней точки отображения плана относительно карты: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`53.91687819154794 - широта `
 
-### `yarn test`
+`27.63435423374176 - долгота `
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+Зум карты по умолчанию – достаточный, чтоб в область просмотра поместился весь план здания. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Список персон
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+В левой части экрана должен быть выведен список персон с отображением аватарки и ФИО. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Список должен выводиться с постраничным выводом по 15 записей на страницу. 
 
-### `yarn eject`
+Запрос для получения списка персон: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`GET​/api​/get_all_people`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Аватарка – используем изображение, ссылка на которое указана в параметре "image_ref" 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ФИО – параметры "name", "midname", "surname" 
 
-## Learn More
+ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Описание запроса во вложенном файле [openapi_4_3_1.yaml](./src/data/openapi_4_3_1.yaml) 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`Адрес сервера: 213.184.245.66 `
 
-### Code Splitting
+`Порт: 5010 `
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`Логин: fetest `
 
-### Analyzing the Bundle Size
+`Пароль: root123456 `
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Прочее
 
-### Making a Progressive Web App
+Дизайн приложения – на усмотрение соискателя. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Технические аспекты, не учтённые в задании, остаются на усмотрение соискателя. 
 
-### Advanced Configuration
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Итоговый результат: исходный код приложения для сборки 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Технология разработки: ReactJS 
