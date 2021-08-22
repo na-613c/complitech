@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import floor from './data/floor.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App floor={floor} />
   </React.StrictMode>,
   document.getElementById('root')
 );
