@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/complitech/static/css/main.38212931.chunk.css",
+    "main.js": "/complitech/static/js/main.a324e6a5.chunk.js",
+    "main.js.map": "/complitech/static/js/main.a324e6a5.chunk.js.map",
+    "runtime-main.js": "/complitech/static/js/runtime-main.23e5e1b8.js",
+    "runtime-main.js.map": "/complitech/static/js/runtime-main.23e5e1b8.js.map",
+    "static/css/2.5f5f9133.chunk.css": "/complitech/static/css/2.5f5f9133.chunk.css",
+    "static/js/2.6cdb07bc.chunk.js": "/complitech/static/js/2.6cdb07bc.chunk.js",
+    "static/js/2.6cdb07bc.chunk.js.map": "/complitech/static/js/2.6cdb07bc.chunk.js.map",
+    "static/js/3.9676aad6.chunk.js": "/complitech/static/js/3.9676aad6.chunk.js",
+    "static/js/3.9676aad6.chunk.js.map": "/complitech/static/js/3.9676aad6.chunk.js.map",
+    "index.html": "/complitech/index.html",
+    "static/css/2.5f5f9133.chunk.css.map": "/complitech/static/css/2.5f5f9133.chunk.css.map",
+    "static/css/main.38212931.chunk.css.map": "/complitech/static/css/main.38212931.chunk.css.map",
+    "static/js/2.6cdb07bc.chunk.js.LICENSE.txt": "/complitech/static/js/2.6cdb07bc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23e5e1b8.js",
+    "static/css/2.5f5f9133.chunk.css",
+    "static/js/2.6cdb07bc.chunk.js",
+    "static/css/main.38212931.chunk.css",
+    "static/js/main.a324e6a5.chunk.js"
+  ]
+}
