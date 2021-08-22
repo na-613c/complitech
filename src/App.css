@@ -1,8 +1,14 @@
 .App {
   text-align: center;
+  width: 1200px;
+  margin: 25px auto;
 }
 
 .leaflet-container {
   height: 550px;
   width: 700px;
+}
+
+body {
+  background: rgb(236, 236, 236);
 }

@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'antd/dist/antd.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import floor from './data/floor.json';
+import { api } from './api/api';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App floor={floor} />
+    <App floor={floor} api={api}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

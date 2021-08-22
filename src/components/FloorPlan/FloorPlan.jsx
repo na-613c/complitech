@@ -4,7 +4,6 @@ import { MapContainer, GeoJSON } from 'react-leaflet';
 const FloorPlan = ({ floor }) => {
     return (
         <div>
-            <h2>FloorPlan</h2>
             <MapContainer
                 center={[53.91712919154794, 27.63486423374176]}// 53.91687819154794 27.63435423374176
                 zoom={19.5}
